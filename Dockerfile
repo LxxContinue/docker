@@ -1,9 +1,9 @@
-FROM openpai/standard:python_3.6-pytorch_1.2.0-gpu
+FROM openpai/standard:python_3.6-pytorch_1.4.0-gpu
 
 RUN pip3 install numpy
 
 RUN pip3 install  torch
-RUN pip3 install  torchvision
+RUN pip3 install  torchvision==0.5.0
 RUN pip3 install  dlib
 RUN pip3 install  scikit-image
 RUN pip3 install  easydict
