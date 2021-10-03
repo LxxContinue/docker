@@ -16,3 +16,4 @@ RUN pip3 install  opencv-python
 RUN pip3 install  einops
 RUN pip3 install  visdom==0.1.8.8 
 RUN pip3 install  Pillow==6.1.0
+RUN pip3 install tb-nightly
