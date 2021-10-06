@@ -1,4 +1,4 @@
-FROM openpai/standard:python_3.6-pytorch_1.4.0-gpu
+FROM openpai/standard:python_3.8-pytorch_1.9.0-gpu
 
 RUN pip3 install numpy
 
@@ -17,4 +17,3 @@ RUN pip3 install  einops
 RUN pip3 install  visdom
 RUN pip3 install  Pillow
 RUN pip3 install tb-nightly
-RUN pip3 install --upgrade tensorflow-gpu
