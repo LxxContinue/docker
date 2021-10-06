@@ -1,4 +1,4 @@
-FROM openpai/standard:python_3.8-pytorch_1.9.0-gpu
+FROM pytorch/pytorch:1.9.0-cuda10.2-cudnn7-devel
 
 RUN pip3 install numpy
 
