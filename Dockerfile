@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:0.4.0
+FROM pytorch/pytorch:0.4.0-cuda9.1-cudnn7-runtime
 
 RUN pip install  numpy
 RUN pip install  torch
