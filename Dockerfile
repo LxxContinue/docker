@@ -1,4 +1,4 @@
-FROM openpai/standard:python_3.6-pytorch_0.4.0-gpu
+FROM pytorch/pytorch:0.4.0
 
 RUN pip install  numpy
 RUN pip install  torch
