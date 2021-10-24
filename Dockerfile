@@ -15,6 +15,6 @@ RUN pip install  visdom
 RUN pip install  Pillow
 RUN pip install  tb-nightly
 RUN pip install  scikit-umfpack
-RUN pip install  cupy
+RUN pip install  cupy-cuda90
 RUN pip install  pynvrtc
 RUN pip install -U setuptools
