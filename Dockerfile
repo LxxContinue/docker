@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:0.4.0-cuda9.1-cudnn8-runtime
+FROM openpai/standard:python_3.6-pytorch_0.4.0-gpu
 
 RUN pip install  numpy
 RUN pip install  torch
