@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
+FROM pytorch/pytorch:0.4.0-cuda9.1-cudnn8-runtime
 
 RUN pip install  numpy
 RUN pip install  torch
@@ -15,4 +15,6 @@ RUN pip install  einops
 RUN pip install  visdom
 RUN pip install  Pillow
 RUN pip install  tb-nightly
-RUN pip install  wandb
+RUN pip install  scikit-umfpack
+RUN pip install  cupy
+RUN pip install  pynvrtc
