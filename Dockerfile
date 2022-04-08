@@ -16,6 +16,7 @@ RUN pip install  visdom
 RUN pip install  Pillow
 RUN pip install  tb-nightly
 RUN pip install  wandb
+RUN pip install  matplotlib
 
 RUN apt-get -y update
 RUN apt --fix-broken -y install
