@@ -23,3 +23,21 @@ RUN apt --fix-broken -y install
 RUN apt-get -y install sudo
 RUN apt -y install libgl1-mesa-glx
 RUN apt-get install libglib2.0-dev -y
+
+RUN conda install git -y
+RUN pip install  albumentations==0.4.3
+RUN pip install  opencv-python==4.1.2.30
+RUN pip install  pudb==2019.2
+RUN pip install  imageio==2.9.0
+RUN pip install  imageio-ffmpeg==0.4.2
+RUN pip install  pytorch-lightning==1.4.2
+RUN pip install  omegaconf==2.1.1
+RUN pip install  test-tube>=0.7.5
+RUN pip install  streamlit>=0.73.1
+RUN pip install  einops==0.3.0
+RUN pip install  torch-fidelity==0.3.0
+RUN pip install  transformers==4.3.1
+
+RUN pip install git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
+RUN pip install git+https://github.com/openai/CLIP.git@main#egg=clip
+
