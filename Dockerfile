@@ -20,9 +20,3 @@ RUN pip install  matplotlib
 
 RUN pip install albumentations==0.4.6
 RUN pip install pandas
-
-RUN apt-get -y update
-RUN apt --fix-broken -y install
-RUN apt-get -y install sudo
-RUN apt -y install libgl1-mesa-glx
-RUN apt-get install libglib2.0-dev -y
