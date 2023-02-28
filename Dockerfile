@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
+RUN pip install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch
 
 RUN pip install  numpy
 RUN pip install  torch
@@ -18,26 +18,11 @@ RUN pip install  tb-nightly
 RUN pip install  wandb
 RUN pip install  matplotlib
 
+RUN pip install albumentations==0.4.6
+RUN pip install pandas
+
 RUN apt-get -y update
 RUN apt --fix-broken -y install
 RUN apt-get -y install sudo
 RUN apt -y install libgl1-mesa-glx
 RUN apt-get install libglib2.0-dev -y
-
-RUN conda install git -y
-RUN pip install  albumentations==0.4.3
-RUN pip install  opencv-python==4.1.2.30
-RUN pip install  pudb==2019.2
-RUN pip install  imageio==2.9.0
-RUN pip install  imageio-ffmpeg==0.4.2
-RUN pip install  pytorch-lightning==1.4.2
-RUN pip install  omegaconf==2.1.1
-RUN pip install  test-tube>=0.7.5
-RUN pip install  streamlit>=0.73.1
-RUN pip install  einops==0.3.0
-RUN pip install  torch-fidelity==0.3.0
-RUN pip install  transformers==4.3.1
-
-RUN pip install git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
-RUN pip install git+https://github.com/openai/CLIP.git@main#egg=clip
-
