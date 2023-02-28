@@ -1,4 +1,4 @@
-RUN pip install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=11.1 -c pytorch
+FROM pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel
 
 RUN pip install  numpy
 RUN pip install  torch
