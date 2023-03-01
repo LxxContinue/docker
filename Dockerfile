@@ -18,3 +18,8 @@ RUN pip install  wandb
 RUN pip install  matplotlib
 RUN pip install albumentations==0.4.6
 RUN pip install pandas
+
+RUN apt --fix-broken install -y
+RUN apt-get install sudo -y
+RUN apt install libgl1-mesa-glx -y
+RUN apt-get install libglib2.0-dev -y
