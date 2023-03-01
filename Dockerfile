@@ -21,7 +21,7 @@ RUN pip install pandas
 
 RUN apt --fix-broken install -y
 RUN apt-get install -y
-RUN apt-get update -y
+RUN apt-get update
 RUN apt install libgl1-mesa-glx -y
 RUN apt-get install libglib2.0-dev -y
 
