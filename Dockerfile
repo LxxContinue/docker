@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel
+FROM pytorch/pytorch:1.8.0-cuda11.1-cudnn8-runtime
 
 RUN apt --fix-broken install -y
 RUN apt-get install -y
