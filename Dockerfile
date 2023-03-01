@@ -1,5 +1,12 @@
 FROM pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel
 
+RUN apt --fix-broken install -y
+RUN apt-get install -y
+RUN apt-get update
+RUN apt install libgl1-mesa-glx -y
+RUN apt-get install libglib2.0-dev -y
+
+
 RUN pip install  torchvision
 RUN pip install  scikit-image
 RUN pip install  easydict
@@ -19,9 +26,4 @@ RUN pip install  matplotlib
 RUN pip install albumentations==0.4.6
 RUN pip install pandas
 
-RUN apt --fix-broken install -y
-RUN apt-get install -y
-RUN apt-get update
-RUN apt install libgl1-mesa-glx -y
-RUN apt-get install libglib2.0-dev -y
 
