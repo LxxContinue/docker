@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.8.1-cuda10.2-cudnn7-runtime
+FROM pytorch/pytorch:1.8.0-cuda11.1-cudnn8-runtime
 
 RUN apt --fix-broken install -y
 RUN apt-get install -y
@@ -9,11 +9,20 @@ RUN apt-get install libglib2.0-dev -y
 
 RUN pip install  torchvision
 RUN pip install  scikit-image
-RUN pip install  numpy
-RUN pip install  Pillow
-RUN pip install  opencv-python
-RUN pip install  matplotlib
-RUN pip install  scipy
-
-RUN pip install  tensorboardX
+RUN pip install  easydict
+RUN pip install  PyYAML
 RUN pip install  dominate
+RUN pip install  dill
+RUN pip install  tensorboardX
+RUN pip install  scipy
+RUN pip install  opencv-python
+RUN pip install  einops
+RUN pip install  visdom
+RUN pip install  Pillow==9.4.0
+RUN pip install  numpy==1.21.5
+RUN pip install  tb-nightly
+RUN pip install  wandb
+RUN pip install  matplotlib
+RUN pip install pandas
+RUN pip install albumentations==1.3.0
+RUN pip install -U typing_extensions
